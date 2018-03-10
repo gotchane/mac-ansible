@@ -1,0 +1,29 @@
+---
+- name: Update homebrew
+  command: "brew update"
+  tags:
+    - base
+    - brew
+    - brew-cask
+
+- name: Install base homebrew packages
+  homebrew:
+    name: "{{ item.name }}"
+    install_options: "{{ item.install_options | default('') }}"
+    state: latest
+  with_items: "{{ base_brew_packages }}"
+  tags:
+    - base
+    - brew
+
+- name: Install brew cask applications
+  homebrew_cask:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    install_options: "{{ item.install_options | default('') }}"
+  with_items: "{{ base_brew_cask_applications }}"
+  ignore_errors: True
+  tags:
+    - base
+    - brew
+    - brew-cask

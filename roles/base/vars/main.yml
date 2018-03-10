@@ -1,0 +1,19 @@
+---
+base_brew_packages:
+  - name: vim
+  - name: zsh
+  - name: tmux
+  - name: postgresql
+  - name: sqlite
+  - name: redis
+base_brew_cask_applications:
+  - name: atom
+  - name: firefox
+  - name: flux
+  - name: google-chrome
+  - name: iterm2
+  - name: java
+  - name: spotify
+  - name: vagrant
+  - name: virtualbox
+  - name: youll-never-take-me-alive

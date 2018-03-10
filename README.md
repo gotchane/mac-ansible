@@ -1,12 +1,32 @@
-# mac-provisioning
+# mac-ansible
 
 ## Requirements
 
-* Latest Xcode
-* Pip (installed in setup script if missing)
-* Ansible (installed in setup script if missing)
-* Homebrew (installed in setup script if missing)
+* Xcode
+
+https://developer.apple.com/xcode/
+
+* Pip
+
+```
+$ sudo easy_install pip
+```
+
+* Ansible
+
+```
+$ sudo pip install ansible
+```
+
+* Homebrew
+
+```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 ## Installation
 
-
+Execlute a command below.
+```
+$ ansible-playbook -i inventories/hosts playbooks/macosx.yml
+```
