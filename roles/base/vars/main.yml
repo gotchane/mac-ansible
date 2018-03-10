@@ -12,6 +12,8 @@ base_brew_cask_applications:
   - name: flux
   - name: google-chrome
   - name: iterm2
+  - name: karabiner
+  - name: karabiner-elements
   - name: java
   - name: spotify
   - name: vagrant
