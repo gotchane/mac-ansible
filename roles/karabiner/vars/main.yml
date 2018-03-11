@@ -1,0 +1,3 @@
+---
+karabiner_brew_cask_applications:
+  - name: karabiner-elements

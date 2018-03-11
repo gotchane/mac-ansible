@@ -1,0 +1,13 @@
+---
+- name: Install karabiner homebrew cask packages
+  homebrew_cask:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    install_options: "{{ item.install_options | default('') }}"
+  with_items: "{{ karabiner_brew_cask_applications }}"
+  ignore_errors: True
+  tags:
+    - karabiner
+    - brew
+
+#- name: Set karabiner config

@@ -3,5 +3,6 @@
   connection: local
   gather_facts: false
   roles:
-    - base
-    - ruby
+   #- base
+   #- ruby
+    - karabiner
