@@ -1,4 +1,5 @@
 ---
+
 karabiner_brew_cask_applications:
   - name: karabiner-elements
 karabiner_config_dir: karabiner
