@@ -1,0 +1,39 @@
+---
+
+- name: Download hyperkit driver
+  get_url:
+    url: "{{ kubnenete_hyperkit_download_url }}"
+    dest: "{{ kubnenete_hyperkit_path }}"
+    mode: u+x
+  tags:
+    - kubenetes
+
+- name: Check if hyperkit driver is downloaded
+  stat: 
+    path: "{{ kubnenete_hyperkit_path }}"
+  register: stat_kubnenete_hyperkit_path
+  tags:
+    - kubenetes
+
+- name: Change hyperkit driver file setting
+  become: True
+  file:
+    path: "{{ kubnenete_hyperkit_path }}"
+    owner: root
+    group: wheel
+    mode: u+s
+    state: file
+  when: stat_kubnenete_hyperkit_path.stat.exists
+  tags:
+    - kubenetes
+
+- name: Install kubenetes homebrew cask packages
+  homebrew_cask:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    install_options: "{{ item.install_options | default('') }}"
+  with_items: "{{ kubenetes_brew_cask_applications }}"
+  ignore_errors: True
+  tags:
+    - kubenetes
+    - brew
