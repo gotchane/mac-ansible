@@ -1,0 +1,5 @@
+---
+
+docker_brew_cask_applications:
+  - name: docker
+

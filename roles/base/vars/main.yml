@@ -17,4 +17,3 @@ base_brew_cask_applications:
   - name: spotify
   - name: vagrant
   - name: virtualbox
-  - name: youll-never-take-me-alive
