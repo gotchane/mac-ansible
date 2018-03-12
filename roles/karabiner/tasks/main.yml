@@ -10,4 +10,10 @@
     - karabiner
     - brew
 
-#- name: Set karabiner config
+- name: Set karabiner config
+  copy:
+    src: "{{ karabiner_config_dir }}"
+    dest: "{{ karabiner_config_dest_dir }}"
+    mode: 0644
+  tags:
+    - karabiner
