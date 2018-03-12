@@ -1,4 +1,15 @@
 ---
+- name: Enable to execute sudo without password
+  become: True
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^%admin\s'
+    line: '%admin ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+  tags:
+    - base
+    - sudo
 
 - name: Update homebrew
   command: "brew update"
