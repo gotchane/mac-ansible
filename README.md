@@ -1,5 +1,8 @@
 # mac-ansible
 
+Personal macosx configulation management with Ansible.
+This repository is inspired by https://github.com/mtchavez/mac-ansible
+
 ## Requirements
 
 * Xcode
@@ -30,3 +33,7 @@ Execlute a command below.
 ```
 $ ansible-playbook -i inventories/hosts playbooks/macosx.yml
 ```
+
+### LICENSE
+
+MIT
