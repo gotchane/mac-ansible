@@ -37,5 +37,4 @@
   ignore_errors: True
   tags:
     - base
-    - brew
     - brew-cask

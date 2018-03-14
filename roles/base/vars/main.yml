@@ -1,12 +1,13 @@
 ---
 
 base_brew_packages:
+  - name: cmake
+  - name: postgresql
+  - name: redis
+  - name: sqlite
+  - name: tmux
   - name: vim
   - name: zsh
-  - name: tmux
-  - name: postgresql
-  - name: sqlite
-  - name: redis
 base_brew_cask_applications:
   - name: atom
   - name: firefox
