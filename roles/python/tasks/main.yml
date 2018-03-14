@@ -8,21 +8,39 @@
   with_items: "{{ python_brew_packages }}"
   tags:
     - python
+    - python3
     - brew
-
 
 - name: Upgrade pip
   command: "pip install --upgrade pip"
   tags:
     - python
 
+- name: Upgrade pip3
+  command: "pip3 install --upgrade pip"
+  tags:
+    - python
+    - python3
+
 - name: Install system python packages
+  become: yes
   pip:
     name: "{{ item }}"
     state: latest
   with_items: "{{ python_packages }}"
   tags:
     - python
+
+- name: Install system python3 packages
+  become: yes
+  pip:
+    name: "{{ item }}"
+    state: latest
+    executable: pip3
+  with_items: "{{ python3_packages }}"
+  tags:
+    - python
+    - python3
 
 - name: Install python versions via pyenv
   shell: "if [ ! `pyenv versions | grep {{ item }}` ]; then {{ python_pyenv_install_cmd }} {{ item }}; fi"
