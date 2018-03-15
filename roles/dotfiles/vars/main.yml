@@ -1,0 +1,5 @@
+---
+
+dotfiles_repo: "https://github.com/gotchane/dotfiles.git"
+dotfiles_dir: "{{ home_dir }}/dotfiles"
+dotfiles_install_cmd: "./dotfiles deploy"
