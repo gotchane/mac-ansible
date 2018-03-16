@@ -4,6 +4,7 @@ base_brew_packages:
   - name: chromedriver
   - name: cmake
   - name: postgresql
+  - name: puma/puma/puma-dev
   - name: redis
   - name: sqlite
   - name: tmux
