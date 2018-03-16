@@ -36,4 +36,4 @@
   ignore_errors: True
   tags:
     - kubenetes
-    - brew
+    - brew-cask

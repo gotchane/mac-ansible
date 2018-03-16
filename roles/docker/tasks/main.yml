@@ -9,4 +9,4 @@
   ignore_errors: True
   tags:
     - docker 
-    - brew
+    - brew-cask

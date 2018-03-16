@@ -9,7 +9,7 @@
   ignore_errors: True
   tags:
     - karabiner
-    - brew
+    - brew-cask
 
 - name: Set karabiner config
   copy:
