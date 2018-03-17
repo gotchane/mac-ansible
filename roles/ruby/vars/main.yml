@@ -2,8 +2,6 @@
 
 ruby_brew_packages:
   - name: rbenv
-  - name: rbenv-bundler
-  - name: rbenv-default-gems
   - name: ruby-build
 ruby_global: "2.4.2"
 ruby_global_file: "{{ home_dir + '/.rbenv/version' }}"
