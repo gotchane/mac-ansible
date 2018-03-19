@@ -1,0 +1,38 @@
+---
+
+- name: Install nodebrew via homebrew
+  homebrew:
+    name: nodebrew
+    state: latest
+  tags:
+    - brew
+    - nodejs
+
+- name: Run setup_dirs of nodebrew
+  command: "/usr/local/opt/nodebrew/bin/nodebrew setup_dirs"
+  tags:
+    - nodejs
+    - nodebrew
+
+- name: Install nodejs via nodebrew
+  command: "nodebrew install {{ item }}"
+  ignore_errors: yes
+  changed_when: False
+  with_items: "{{ nodejs_versions }}"
+  tags:
+    - nodejs
+    - nodebrew
+
+- name: Set default nodejs
+  command: "nodebrew use {{ nodejs_default_ver }}"
+  tags:
+    - nodejs
+    - nodebrew
+
+- name: Install npm packages globally
+  npm:
+    name: "{{ item.name }}"
+    global: yes
+  with_items: "{{ nodejs_npm_packages }}"
+  tags:
+    - nodejs
