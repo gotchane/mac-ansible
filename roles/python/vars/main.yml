@@ -4,14 +4,14 @@ python_brew_packages:
   - name: python
   - name: python3
 python_packages:
-  - pip
-  - virtualenv
-  - virtualenvwrapper
-  - boto
-  - awscli
-  - ansible-lint
+  - name: pip
+  - name: virtualenv
+  - name: boto
+  - name: awscli
+    extra_args: "--ignore-installed six"
+  - name: ansible-lint
 python3_packages:
-  - neovim
+  - name: neovim
 python_pyenv_install_cmd: "CFLAGS=\"-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include\" LDFLAGS=\"-L$(brew --prefix openssl)/lib -L/usr/local/opt/sqlite/lib\" pyenv install"
 python_use_pyenv: False
 python_pyenv_versions:
