@@ -11,11 +11,11 @@
     - python3
     - brew
 
-- name: Check if pip3 installed
+- name: Check if pip3 is installed
   command: "which pip3"
   check_mode: no
-  register: res_check_if_pip3_installed
-  failed_when: res_check_if_pip3_installed.rc not in [0, 1]
+  register: res_check_if_pip3_is_installed
+  failed_when: res_check_if_pip3_is_installed.rc not in [0, 1]
   tags:
     - python
     - python3
@@ -29,7 +29,7 @@
 - name: Upgrade pip3
   become: yes
   command: "pip3 install --upgrade pip"
-  when: res_check_if_pip3_installed.rc == 0
+  when: res_check_if_pip3_is_installed.rc == 0
   tags:
     - python
     - python3
@@ -49,8 +49,8 @@
     name: "{{ item }}"
     state: latest
     executable: pip3
-  when: res_check_if_pip3_installed.rc == 0
   with_items: "{{ python3_packages }}"
+  when: res_check_if_pip3_is_installed.rc == 0
   tags:
     - python
     - python3

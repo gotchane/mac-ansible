@@ -29,10 +29,19 @@
     - nodejs
     - nodebrew
 
+- name: Check if npm is installed
+  command: "which npm"
+  check_mode: no
+  register: res_check_if_npm_is_installed
+  failed_when: res_check_if_npm_installed.rc not in [0, 1]
+  tags:
+    - nodejs
+
 - name: Install npm packages globally
   npm:
     name: "{{ item.name }}"
     global: yes
   with_items: "{{ nodejs_npm_packages }}"
+  when: res_check_if_npm_is_installed.rc == 0
   tags:
     - nodejs
