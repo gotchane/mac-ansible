@@ -10,6 +10,14 @@
     - ruby
     - rbenv
 
+- name: Initialize rbenv
+  command: "rbenv init"
+  register: res_rbenv_init
+  failed_when: res_rbenv_init.rc not in [0, 1]
+  tags:
+    - ruby
+    - rbenv
+
 - name: Write default-gem file
   template:
     src: default-gems.j2
