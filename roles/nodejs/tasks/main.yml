@@ -33,7 +33,7 @@
   command: "which npm"
   check_mode: no
   register: res_check_if_npm_is_installed
-  failed_when: res_check_if_npm_installed.rc not in [0, 1]
+  failed_when: res_check_if_npm_is_installed.rc not in [0, 1]
   tags:
     - nodejs
 
