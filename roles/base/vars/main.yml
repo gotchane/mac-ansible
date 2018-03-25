@@ -15,6 +15,7 @@ base_brew_cask_applications:
   - name: firefox
   - name: flux
   - name: google-chrome
+  - name: google-japanese-ime
   - name: iterm2
   - name: java
   - name: spotify
