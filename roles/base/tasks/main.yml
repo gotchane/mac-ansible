@@ -38,3 +38,20 @@
   tags:
     - base
     - brew-cask
+
+- name: Change shell config
+  become: yes
+  lineinfile:
+    path: /etc/shells
+    state: present
+    line: "{{ base_default_shell }}"
+  tags:
+    - base
+    - shell
+
+- name: Change default shell
+  become: yes
+  command: "chsh -s {{ base_default_shell }} {{ ansible_user }}"
+  tags:
+    - base
+    - shell
