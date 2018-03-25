@@ -1,0 +1,5 @@
+---
+
+golang_brew_packages:
+  - name: go
+
