@@ -12,11 +12,13 @@
     - brew
 
 - name: Upgrade pip
+  become: yes
   command: "pip install --upgrade pip"
   tags:
     - python
 
 - name: Upgrade pip3
+  become: yes
   command: "pip3 install --upgrade pip"
   tags:
     - python
