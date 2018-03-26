@@ -19,6 +19,7 @@ base_brew_cask_applications:
   - name: google-japanese-ime
   - name: iterm2
   - name: java
+  - name: mattermost
   - name: spotify
   - name: vagrant
   - name: virtualbox
