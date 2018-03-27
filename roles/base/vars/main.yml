@@ -4,6 +4,8 @@ base_brew_packages:
   - name: chromedriver
   - name: cmake
   - name: git-secrets
+  - name: graphviz
+  - name: imagemagick
   - name: postgresql
   - name: puma/puma/puma-dev
   - name: redis
