@@ -20,6 +20,7 @@ base_brew_cask_applications:
   - name: iterm2
   - name: java
   - name: mattermost
+  - name: slack
   - name: spotify
   - name: vagrant
   - name: virtualbox
