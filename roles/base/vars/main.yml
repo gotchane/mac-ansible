@@ -1,6 +1,7 @@
 ---
 
 base_brew_packages:
+  - name: certbot
   - name: chromedriver
   - name: cmake
   - name: git-secrets

@@ -22,7 +22,7 @@
   homebrew:
     name: "{{ item.name }}"
     install_options: "{{ item.install_options | default('') }}"
-    state: latest
+    state: "{{ item.state | default('latest') }}"
   with_items: "{{ base_brew_packages }}"
   tags:
     - base
