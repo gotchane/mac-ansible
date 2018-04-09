@@ -27,5 +27,6 @@ base_brew_cask_applications:
   - name: spotify
   - name: vagrant
   - name: virtualbox
+  - name: zeplin
   - name: zoomus
 base_default_shell: /usr/local/bin/zsh
