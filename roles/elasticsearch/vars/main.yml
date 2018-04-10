@@ -1,0 +1,7 @@
+---
+
+elasticsearch_brew_packages:
+  - name: elasticsearch
+
+elasticsearch_brew_cask_applications:
+  - name: java8
