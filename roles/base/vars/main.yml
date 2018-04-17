@@ -11,6 +11,7 @@ base_brew_packages:
   - name: puma/puma/puma-dev
   - name: redis
   - name: sqlite
+  - name: the_silver_searcher
   - name: tmux
   - name: vim
   - name: zsh
