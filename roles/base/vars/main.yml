@@ -4,10 +4,13 @@ base_brew_packages:
   - name: certbot
   - name: chromedriver
   - name: cmake
+  - name: ghq
   - name: git-secrets
   - name: graphviz
+  - name: hub
   - name: imagemagick
   - name: mas
+  - name: peco
   - name: postgresql
   - name: puma/puma/puma-dev
   - name: redis
