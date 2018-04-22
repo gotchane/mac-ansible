@@ -10,6 +10,7 @@ base_brew_packages:
   - name: hub
   - name: imagemagick
   - name: mas
+  - name: neovim
   - name: peco
   - name: postgresql
   - name: puma/puma/puma-dev
