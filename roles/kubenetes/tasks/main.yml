@@ -27,6 +27,16 @@
   tags:
     - kubenetes
 
+- name: Install kubenetes brew packages
+  homebrew:
+    name: "{{ item.name }}"
+    install_options: "{{ item.install_options | default('') }}"
+    state: "{{ item.state | default('latest') }}"
+  with_items: "{{ kubenetes_brew_packages }}"
+  tags:
+    - kubenetes
+    - brew
+
 - name: Install kubenetes homebrew cask packages
   homebrew_cask:
     name: "{{ item.name }}"

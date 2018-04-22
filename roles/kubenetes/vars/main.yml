@@ -2,5 +2,7 @@
 
 kubnenete_hyperkit_download_url: https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-hyperkit
 kubnenete_hyperkit_path: /usr/local/bin/docker-machine-driver-hyperkit
+kubenetes_brew_packages:
+  - name: kubernetes-helm
 kubenetes_brew_cask_applications:
   - name: minikube
