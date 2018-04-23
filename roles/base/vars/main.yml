@@ -4,6 +4,7 @@ base_brew_packages:
   - name: certbot
   - name: chromedriver
   - name: cmake
+  - name: ctags
   - name: ghq
   - name: git-secrets
   - name: graphviz
