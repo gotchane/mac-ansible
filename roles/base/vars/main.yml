@@ -25,6 +25,7 @@ base_brew_cask_applications:
   - name: atom
   - name: firefox
   - name: flux
+  - name: franz
   - name: google-chrome
   - name: google-japanese-ime
   - name: iterm2
