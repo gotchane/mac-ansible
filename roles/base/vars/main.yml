@@ -12,6 +12,7 @@ base_brew_packages:
   - name: imagemagick
   - name: mas
   - name: neovim
+  - name: nkf
   - name: peco
   - name: postgresql
   - name: puma/puma/puma-dev
