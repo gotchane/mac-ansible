@@ -29,6 +29,7 @@ base_brew_cask_applications:
   - name: flux
   - name: franz
   - name: google-chrome
+  - name: google-cloud-sdk
   - name: google-japanese-ime
   - name: iterm2
   - name: java
