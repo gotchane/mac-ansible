@@ -13,6 +13,7 @@ base_brew_packages:
   - name: mas
   - name: neovim
   - name: nkf
+  - name: notion
   - name: peco
   - name: postgresql
   - name: puma/puma/puma-dev
