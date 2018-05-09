@@ -15,6 +15,7 @@ base_brew_packages:
   - name: nkf
   - name: notion
   - name: peco
+  - name: phantomjs
   - name: postgresql
   - name: puma/puma/puma-dev
   - name: redis
