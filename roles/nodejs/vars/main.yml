@@ -1,6 +1,7 @@
 ---
 nodejs_versions: 
   - "v9.7.1"
+  - "v5.7.1"
 nodejs_default_ver: "v9.7.1"
 nodejs_npm_packages:
   - name: yarn
