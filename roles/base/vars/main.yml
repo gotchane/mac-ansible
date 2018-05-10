@@ -10,7 +10,9 @@ base_brew_packages:
   - name: graphviz
   - name: hub
   - name: imagemagick
+  - name: makensis
   - name: mas
+  - name: mono
   - name: neovim
   - name: nkf
   - name: notion
@@ -23,6 +25,7 @@ base_brew_packages:
   - name: the_silver_searcher
   - name: tmux
   - name: vim
+  - name: wine
   - name: zsh
 base_brew_cask_applications:
   - name: atom
