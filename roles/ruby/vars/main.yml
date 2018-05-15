@@ -9,6 +9,7 @@ ruby_rbenv_default_gems_file: "{{ home_dir + '/.rbenv/default-gems' }}"
 ruby_versions:
   - "{{ ruby_global }}"
   - "2.4.2"
+  - "2.4.3"
   - "2.3.3"
   - "2.3.5"
 ruby_default_gems:
