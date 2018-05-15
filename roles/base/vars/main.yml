@@ -16,6 +16,7 @@ base_brew_packages:
   - name: neovim
   - name: nkf
   - name: notion
+  - name: opencv@2
   - name: peco
   - name: phantomjs
   - name: postgresql
