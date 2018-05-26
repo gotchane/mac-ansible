@@ -13,6 +13,7 @@ base_brew_packages:
   - name: makensis
   - name: mas
   - name: mono
+  - name: mysql
   - name: neovim
   - name: nkf
   - name: notion
