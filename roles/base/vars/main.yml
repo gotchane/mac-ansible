@@ -42,6 +42,7 @@ base_brew_cask_applications:
   - name: iterm2
   - name: java
   - name: mattermost
+  - name: sketch
   - name: slack
   - name: spotify
   - name: trailer
