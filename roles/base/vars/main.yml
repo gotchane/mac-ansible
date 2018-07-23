@@ -8,6 +8,7 @@ base_brew_packages:
   - name: ghq
   - name: git-secrets
   - name: graphviz
+  - name: heroku/brew/heroku
   - name: hub
   - name: imagemagick
   - name: makensis
@@ -40,6 +41,7 @@ base_brew_cask_applications:
   - name: google-chrome
   - name: google-cloud-sdk
   - name: google-japanese-ime
+  - name: gpg-suite
   - name: iterm2
   - name: java
   - name: mattermost
