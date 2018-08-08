@@ -24,6 +24,7 @@ base_brew_packages:
   - name: postgresql
   - name: puma/puma/puma-dev
   - name: redis
+  - name: ripgrep
   - name: sqlite
   - name: the_silver_searcher
   - name: tmux
@@ -32,7 +33,6 @@ base_brew_packages:
   - name: wine
   - name: zsh
 base_brew_cask_applications:
-  - name: alfred
   - name: amazon-music
   - name: atom
   - name: firefox
