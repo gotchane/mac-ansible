@@ -25,6 +25,7 @@ base_brew_packages:
   - name: puma/puma/puma-dev
   - name: redis
   - name: ripgrep
+  - name: roswell
   - name: sqlite
   - name: the_silver_searcher
   - name: tmux
