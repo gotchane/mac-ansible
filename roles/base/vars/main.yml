@@ -48,6 +48,7 @@ base_brew_cask_applications:
   - name: mattermost
   - name: sketch
   - name: slack
+  - name: spectacle
   - name: spotify
   - name: trailer
   - name: vagrant
