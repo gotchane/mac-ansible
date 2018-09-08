@@ -45,6 +45,7 @@ base_brew_cask_applications:
   - name: gpg-suite
   - name: iterm2
   - name: java
+  - name: keycastr
   - name: mattermost
   - name: sketch
   - name: slack
