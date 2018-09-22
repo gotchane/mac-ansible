@@ -1,6 +1,7 @@
 ---
 
 base_brew_packages:
+  - name: calibre
   - name: certbot
   - name: chromedriver
   - name: cmake
