@@ -39,6 +39,7 @@ base_brew_packages:
 base_brew_cask_applications:
   - name: amazon-music
   - name: atom
+  - name: boostnote
   - name: firefox
   - name: flux
   - name: franz
