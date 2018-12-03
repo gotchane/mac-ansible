@@ -49,6 +49,7 @@ base_brew_cask_applications:
   - name: iterm2
   - name: java
   - name: keycastr
+  - name: krisp
   - name: mattermost
   - name: sketch
   - name: slack
