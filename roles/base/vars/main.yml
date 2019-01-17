@@ -62,7 +62,6 @@ base_brew_cask_applications:
   - name: virtualbox
   - name: virtualbox-extension-pack
   - name: visual-studio-code
-  - name: zazu
   - name: zeplin
   - name: zoomus
 base_default_shell: /usr/local/bin/zsh
