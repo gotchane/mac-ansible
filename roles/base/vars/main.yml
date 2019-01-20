@@ -6,6 +6,7 @@ base_brew_packages:
   - name: chromedriver
   - name: cmake
   - name: ctags
+  - name: direnv
   - name: ghq
   - name: git-secrets
   - name: graphviz
