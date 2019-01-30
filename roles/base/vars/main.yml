@@ -35,6 +35,7 @@ base_brew_packages:
   - name: tmux
   - name: tree
   - name: vim
+  - name: wget
   - name: wine
   - name: zsh
 base_brew_cask_applications:
