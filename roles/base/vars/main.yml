@@ -9,6 +9,7 @@ base_brew_packages:
   - name: direnv
   - name: ghq
   - name: git-secrets
+  - name: goreleaser
   - name: graphviz
   - name: heroku/brew/heroku
   - name: hub
