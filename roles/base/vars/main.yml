@@ -33,6 +33,7 @@ base_brew_packages:
   - name: sqlite
   - name: textmate
   - name: the_silver_searcher
+  - name: tig
   - name: tmux
   - name: tree
   - name: vim
