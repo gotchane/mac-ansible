@@ -45,6 +45,7 @@ base_brew_cask_applications:
   - name: atom
   - name: boostnote
   - name: dynamodb-local
+  - name: edex-ui
   - name: firefox
   - name: flux
   - name: franz
