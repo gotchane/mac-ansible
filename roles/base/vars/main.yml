@@ -61,7 +61,6 @@ base_brew_cask_applications:
   - name: slack
   - name: spectacle
   - name: spotify
-  - name: trailer
   - name: vagrant
   - name: virtualbox
   - name: virtualbox-extension-pack
