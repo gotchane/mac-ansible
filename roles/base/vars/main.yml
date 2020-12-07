@@ -1,52 +1,33 @@
 ---
 
 base_brew_packages:
-  - name: calibre
-  - name: certbot
-  - name: chromedriver
-  - name: circleci
-  - name: cmake
   - name: ctags
-  - name: direnv
   - name: ghq
   - name: git-secrets
-  - name: goreleaser
-  - name: graphviz
-  - name: heroku/brew/heroku
-  - name: hub
   - name: imagemagick
-  - name: makensis
   - name: mas
-  - name: mono
-  - name: mysql
   - name: neovim
   - name: nkf
-  - name: notion
-  - name: opencv@2
   - name: peco
-  - name: phantomjs
   - name: postgresql
   - name: puma/puma/puma-dev
+  - name: pyenv
   - name: redis
   - name: ripgrep
-  - name: roswell
-  - name: slackcat
   - name: sqlite
-  - name: textmate
   - name: the_silver_searcher
   - name: tig
   - name: tmux
   - name: tree
   - name: vim
   - name: wget
-  - name: wine
   - name: zsh
 base_brew_cask_applications:
+  - name: 1password
   - name: amazon-music
-  - name: atom
+  - name: amazon-photos
   - name: boostnote
-  - name: dynamodb-local
-  - name: edex-ui
+  - name: coteditor
   - name: firefox
   - name: flux
   - name: franz
@@ -55,18 +36,11 @@ base_brew_cask_applications:
   - name: google-japanese-ime
   - name: gpg-suite
   - name: iterm2
-  - name: java
-  - name: keycastr
   - name: krisp
-  - name: mattermost
-  - name: sketch
   - name: slack
-  - name: spectacle
-  - name: spotify
   - name: vagrant
   - name: virtualbox
   - name: virtualbox-extension-pack
   - name: visual-studio-code
-  - name: zeplin
-  - name: zoomus
+  - name: zoom
 base_default_shell: /usr/local/bin/zsh
